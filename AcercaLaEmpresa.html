@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="sr" data-theme="light" style="color-scheme: light;">
+<head>
+  <title>Acerca de Rentalex S.R.L</title>
+  <script>
+
+</script>
+
+<img src="E:\Mis Programitas\AA-RENTALEX\fotos\LogoRentalex2.png" alt="logo de la empresa" width="300px"style="float: right;"> <!-- Style= "float:    " es para donde va la foto;-->
+<h1 style="text-align: center;">Rentalex S.R.L</h1> <!-- TITLO , EN ESTE CASO CENTRADO AL MEDIO-->
+<h1 style="font-size: 30px;">Sobre Nosotros </h1>
+  <p> rentalex S.R.L Es una Empresa dedicada al alquiler de Equipo Vial , realizando trabajos de todo tipo, por su amplia experiencia en el mercado luego de 35 Años en la actividad.
+    Personal altamente calificado , equipos de última generación acompañan la trayectoria..</p>   <!-- TEXTO NORMAL -->
+  <br> <!--Dejar Espacios -->
+
+
+  <ul>
+          <h1 style="font-size: 30px;">Nuestro Equipamento:</h1>
+    <li> FOTO DE LA PALA RETRO </li>
+    <img src="E:\Mis Programitas\AA-RENTALEX\fotos\prueba.png" alt="Foto de la Pala Retro Año 2004" width="200px"> <!-- Alt es para descripcion, Width es el tamaño -->
+    
+    <li>Pala Retro Año 2004</li> 
+    <li>Pala reto Año 2010</li>
+    <li>Pala retro año 2022</li>
+  </ul>
+
+
+
+<style>
+    #PonerModoOscuro {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    #PonerModoOscuro:hover {
+      background-color: #555;
+    }
+
+    #PonerModoOscuro:active {
+      transform: translateY(2px);
+    }
+
+    body[data-theme="dark"] {
+      background-color: #333;
+    }
+
+    #irMenuPrincipal {
+      position: fixed;
+      bottom: 10px;
+      right: 170px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    #Linkedin {
+      position: fixed;
+      bottom: 10px;
+      right: 315px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <button id="PonerModoOscuro" onclick="PonerModoOscuro()">Cambiar Color Fondo</button>
+  <button id="irMenuPrincipal" onclick="irMenuPrincipal()">Ir Al Menú Principal</button>
+  <button id="Linkedin" onclick="Linkedin()">Perfil Linkedin:Eduardo Mares</button>
+  
+  <script>
+    function PonerModoOscuro() {
+      const body = document.getElementsByTagName("body")[0];
+      const currentTheme = body.getAttribute("data-theme");
+      const newTheme = currentTheme === "dark" ? "light" : "dark";
+      body.setAttribute("data-theme", newTheme);
+    }
+
+    function irMenuPrincipal() {
+      window.location.href = "file:///E:/Mis%20Programitas/AA-RENTALEX/rentalex.html";
+    }
+
+function Linkedin(){
+
+window.location.href="https://ar.linkedin.com/in/eduardo-mares-85342148";
+
+}
+
+
+
+
+
+
+  </script>
+</body>
+</html>
