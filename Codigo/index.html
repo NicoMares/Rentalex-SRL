@@ -44,13 +44,23 @@
         cursor: pointer;
         z-index: 10;
       }
-
+      #modo-GitHub {
+        position: fixed;
+        bottom: 10px;
+        right: 310px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        z-index: 10;
+      }
     </style>
   </head>
   <body>
     <button id="mode-button" onclick="PonerModoOscuro()">Cambiar Color Fondo</button>
     <button id="modo-boton" onclick="SobreLaEmpresa()">Sobre La Empresa</button>
-   
+    <button id="modo-GitHub" onclick="GitHub()">GitHub</button>
   
     <script>
       function PonerModoOscuro() {
@@ -63,6 +73,9 @@
       function SobreLaEmpresa() {
         window.location.href = "file:///E:/Mis%20Programitas/AA-RENTALEX/Codigo/AcercaLaEmpresa.html";
       }
+      function GitHub() {
+              window.location.href = "https://github.com/NicoMares";
+            }
     </script>
   </body>
   </html>
