@@ -55,13 +55,24 @@
         cursor: pointer;
         z-index: 10;
       }
+      #modo-Instagram {
+        position: fixed;
+        bottom: 10px;
+        right: 385px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        z-index: 10;
+      }
     </style>
   </head>
   <body>
     <button id="mode-button" onclick="PonerModoOscuro()">Cambiar Color Fondo</button>
     <button id="modo-boton" onclick="SobreLaEmpresa()">Sobre La Empresa</button>
     <button id="modo-GitHub" onclick="GitHub()">GitHub</button>
-  
+    <button id="modo-Instagram" onclick="Instagram()">Instagram</button>
     <script>
       function PonerModoOscuro() {
         const body = document.getElementsByTagName("body")[0];
@@ -75,6 +86,9 @@
       }
       function GitHub() {
               window.location.href = "https://github.com/NicoMares";
+            }
+            function Instagram (){
+              window.location.href="https://www.instagram.com/rentalexsrl/" ;
             }
     </script>
   </body>
